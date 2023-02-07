@@ -27,8 +27,20 @@ body {
     text-align: center;
 }
 
-@media screen {
-    min-width: 320px;
+@media screen and (min-width: 320px) {
+    .container {
+        width: 95%;
+    }
+}
+@media screen and (min-width: 375px) {
+    .container {
+        width: 90%;
+    }
+}
+@media screen and (min-width: 675px) {
+    .container {
+        width: 80%;
+    }
 }
 
 .heading {
@@ -47,13 +59,19 @@ body {
     background: rgb(255, 255, 255);
     border-radius: 8px;
     margin-bottom: 4rem;
-    width: 80%;
+    width: 95%;
     max-width: 320px;
     overflow: hidden;
     box-shadow: 3px 15px 49px -16px rgba(145, 145, 145, 1);
     -webkit-box-shadow: 3px 15px 49px -16px rgba(145, 145, 145, 1);
     -moz-box-shadow: 3px 15px 49px -16px rgba(145, 145, 145, 1);
     transition: all 0.2s;
+}
+
+@media screen and (min-width: 800px) {
+    .project {
+        margin-right: 2rem;
+    }
 }
 
 .project:hover {
